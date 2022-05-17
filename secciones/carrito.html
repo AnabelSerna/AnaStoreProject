@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../estilos/estilo.css">
     <title>Carrito</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f2c631eb1d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="site-header">
@@ -58,8 +57,140 @@
         </nav>
         </header> 
     <div class="banner"></div>
-    <h2 class="banner__title">AnaStore</h2>
-    <p class="banner__content">Todo lo que buscas en moda.</p>
+    <h2 class="banner__title">Carrito de compras</h2>
+
+
+    <section class="carrito">
+    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option selected>Productos</option>
+        <option value="1">Set Sharon</option>
+        <option value="2">Short Kim</option>
+        <option value="3">Top Paris</option>
+      </select>
+      
+      <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+        <option selected>Cantidad</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3 o más</option>
+      </select>
+    </section>
+
+    <h2>Datos de contacto</h2>
+
+
+    <section class="carritoSegundo">
+        <form class="row g-3">
+            <div class="col-md-4">
+                <label for="validationServer01" class="form-label">Nombre</label>
+                <input type="text" class="form-control is-valid" id="validationServer01" value="Ana" required>
+                <div class="valid-feedback">
+            Luce bien!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationServer02" class="form-label">Apellido</label>
+          <input type="text" class="form-control is-valid" id="validationServer02" value="Gomez" required>
+          <div class="valid-feedback">
+              Luce bien!
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationServerUsername" class="form-label">Email</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                    Por favor ingresa una direccion email.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationServer03" class="form-label">Dirección</label>
+          <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+          <div id="validationServer03Feedback" class="invalid-feedback">
+            Por favor proporciona una dirección válida.
+        </div>
+    </div>
+    <div class="col-md-3">
+        <label for="validationServer04" class="form-label">País</label>
+        <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+            <option selected disabled value="">Selecciona...</option>
+            <option>Argentina</option>
+        </select>
+        <div id="validationServer04Feedback" class="invalid-feedback">
+            Por favor selecciona una opción.
+        </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationServer05" class="form-label">Cp</label>
+            <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+            <div id="validationServer05Feedback" class="invalid-feedback">
+                Por favor proporcione un código postal válido.
+            </div>
+        </div>
+    <div class="col-12">
+          <button class="btn btn-primary" type="submit">Enviar formulario</button>
+        </div>
+    </form>
+</section>
+
+    <h2>Datos de facturación</h2>
+
+    <section class="formFactura">
+    <form class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Titular de la tarjeta</label>
+      <input type="email" class="form-control" id=" Nombre y apellido">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">DNI</label>
+      <input type="password" class="form-control" id="12345678">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Dirección de facturación</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 calle">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label">Numero de la tarjeta</label>
+      <input type="text" class="form-control" id="inputAddress2">
+    </div>
+ 
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">Fecha de caducidad</label>
+      <select id="inputState" class="form-select">
+        <option selected></option>
+        <option>2024</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">Codigo</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Recordar
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+            <label class="form-check-label" for="invalidCheck3">
+                Acepto los términos y condiciones
+            </label>
+            <div id="invalidCheck3Feedback" class="invalid-feedback">
+            Debe aceptar antes de enviar.
+        </div>
+    </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Realizar compra</button>
+    </div>
+  </form>
+</section>
 
     <footer>
         <section class="redes">

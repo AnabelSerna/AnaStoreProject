@@ -111,7 +111,6 @@
  .textoNosotros{
     color: rgb(0, 0, 0);
     margin: 20px 10px 400px 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 5cm;
     border-radius: 6px;
     justify-content: center;
@@ -140,38 +139,14 @@
  .menu{
     display: none;
  }
-  
-  
- .conteiner{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto ;   
-    margin-bottom: 10rem;
-    margin-top: 6rem;
- }
-  
- .gridConteiner{
-    padding: 1rem 1rem 1rem ;
-    margin: 2rem;
-    background-color: #dadada;
-    display: flex;
- }
- .gridConteiner{
-    box-shadow:  5px 9px 1px #a4a2a2;
-    border-radius: 4px;
- }
- .imagenGrid{
-    height: 350px;
-    width: 250px;
- }
+
  .tiendaTitulo{
-    background-color: #dadada;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 5px 9px 1px  #dadadaef;
+    font-size: x-large;
  }
-  
-  
+
+ .container{
+    padding: 30px;
+ }
  .contact-wrapper{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -315,9 +290,23 @@
  .violet{
     background-color: #fffdfcf9;
  }
-  
-  
-  
+
+
+.carousel-inner .carousel-item img { 
+   width: auto;
+   height: auto;
+}
+.carrito{
+   padding: 30px;
+}
+.carritoSegundo{
+   padding: 30px;
+}
+
+.formFactura{
+   padding: 30px;
+}
+
  @media (max-width:768px){
     .contact-wrapper{
         display: grid;
@@ -418,73 +407,4 @@
     width: 100%;
     height: 100%;
     }
-    }
-  
-  
- .site-header{
-    grid-area: header;
- }
- .tiendaTitulo{
-    grid-area: tienda;
- }
- .conteiner{
-    grid-area: contenedor;
- }
- .footer{
-    grid-area: footer;
- }
-  
- .mediaContenedor{
-    display: grid;
-    grid-template-areas:
-    "header"
-    "tienda"
-    "contenedor"
-    "footer"
-    ;
- }
-  
- @media (max-width:767px){
-    .mediaContenedor{
-        grid-template-columns: 1fr;
-        display: grid;
-        grid-template-areas:
-        "header"
-        "tienda"
-        "contenedor"
-        "footer"
-        ;
-    }
- .conteiner{
-    grid-template-columns: 1fr;
-    background-color: #e1dbd6;
-    background-image: linear-gradient(62deg, #e1dbd6 0%, #d9cbb1 100%);
- }
- }
-  
- @media (min-width: 768px) and (max-width: 1023px) {
-  
-    .mediaContenedor{
-        grid-template-columns: 1fr;
-        display: grid;
-        grid-template-areas:
-        "header"
-        "tienda"
-        "contenedor"
-        "footer"
-        ;
-    }
- .conteiner{
-    grid-template-columns: 1fr;
-    background-color: #e1dbd6;
-    background-image: linear-gradient(62deg, #e1dbd6 0%, #d9cbb1 100%);
- }
- .tiendaTitulo{
-    background-color: #d6b8a0;
-    background-image: linear-gradient(62deg, #e1dbd6 0%, #d9cbb1 100%);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 9px 1px #b2aa99;
- }
-    }
- 
+    } 
