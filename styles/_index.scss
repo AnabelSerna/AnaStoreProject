@@ -1,0 +1,153 @@
+
+
+$titulo:#dadada;
+.bienvenida{
+    background-color: $titulo;
+    box-shadow: 0 10px 20px, 0 6px 6px #ead6cc;
+    border-radius: 6px;
+ }
+ .tituloDestacados{
+    background-color: $titulo;
+    box-shadow: 0 10px 20px, 0 6px 6px #ead6cc;
+    border-radius: 6px;
+    font-size:larger;
+ }
+
+
+ .video{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    iframe{
+        position: absolute;
+        top: 0%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 60px;
+        margin-bottom: 60px;
+     }
+ }
+
+
+ img{
+    display: inline-block;
+    height: 450px;
+    width: 450x;
+    border-radius: 2px;
+ }
+
+.imgindex{
+   box-shadow: 0 10px 20px, 0 6px 6px;
+}
+ p{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    color: black;
+ }
+
+.violet{
+   background-color: #fffdfcf9;
+}
+
+  
+ .blogContainer{
+    background-color: #e7e5e3f8;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto auto auto;
+ }
+  
+ .imagenD, .imagenI{
+    display: flex;
+    align-items: center;
+    width: 100%;
+ }
+ .imagenI{
+    flex-direction: row-reverse;
+ }
+ .imagenD div,
+ .imagenI div{
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    object-fit: cover;
+ }
+
+
+ .container--flex{
+    display: flex;
+    justify-content: space-between;
+ }
+ .mainHeader{
+    padding: 10px;
+ }
+  
+ .menu{
+    display: none;
+ }
+
+ .tiendaTitulo{
+    font-size: x-large;
+ }
+
+ .container{
+    padding: 30px;
+ }
+
+ .carousel-inner .carousel-item img { 
+    width: auto;
+    height: auto;
+ }
+
+ .card-box{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: #dadada; 
+    padding: 25px;
+    border-radius: 8px; 
+    position: relative;
+    margin-top: 40px;
+ }
+ 
+ .card-box::before{
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: calc(100% + 8px); 
+    height: calc(100% + 8px);
+    transform: translate(-4px, -4px); 
+    background: linear-gradient(60deg, #5ff281, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f) 0 50%;
+    background-size: 300% 300%; 
+    animation:  gradient-animation 2.5s alternate infinite; 
+    border-radius: 8px;
+    z-index: -1; 
+ }
+ .card-titles{
+    font-size: 40px;
+    margin-block: 25px;
+ }
+ 
+ .card-title span{
+    font-size: 30px;
+ }
+ .card-button{
+    display: inline-block;
+    font-size: 14px;
+    color: rgb(52, 52, 52);
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 10px 15px;
+ }
+ 
+ @keyframes gradient-animation {
+    50%{
+       background-position: 100% 50%;
+    }
+ }
+ 
+ 
