@@ -5,6 +5,7 @@ $titulo:#dadada;
     background-color: $titulo;
     box-shadow: 0 10px 20px, 0 6px 6px #ead6cc;
     border-radius: 6px;
+    font-size: larger;
  }
  .tituloDestacados{
     background-color: $titulo;
@@ -102,7 +103,19 @@ $titulo:#dadada;
     height: auto;
  }
 
+ .card-boxx{
+   color: rgb(0, 0, 0);
+   text-align: center;
+   background-color: #dadada; 
+   padding: 25px;
+   border-radius: 8px; 
+   position: relative;
+   margin-top: 40px;
+ }
+
  .card-box{
+    justify-self: center;
+    width: 95%;
     color: rgb(0, 0, 0);
     text-align: center;
     background-color: #dadada; 

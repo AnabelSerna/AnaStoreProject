@@ -1,0 +1,43 @@
+
+$redes:(
+    facebook:  #dadada,
+    instagram: #dadada,
+);
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+    }
+};
+
+
+/* extend*/
+
+.prendasDestacadas{
+    border: 1px solid rgb(0, 0, 0);
+    background-color:  #dadada;
+    margin: 10px
+}
+
+.prendasDestacadas--dia{
+    @extend.prendasDestacadas;
+    border-radius: 10px;
+    margin-top: 20px
+}
+.prendasDestacadas--noche{
+    @extend.prendasDestacadas;
+    border-radius: 10px;
+}
+.prendasDestacadas--formal{
+    @extend.prendasDestacadas;
+    border-radius: 10px;
+}
+
+@mixin sizes ($widht,$height) {
+    height: $height;
+    width: $widht;
+}
+
+.my_mixin{
+    @include sizes (500px, 50px);
+    background-color: lightcoral;
+}

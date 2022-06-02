@@ -6,7 +6,6 @@
   margin-left: 0px;
   -webkit-box-shadow: 1px 1px 1px #ffffff;
           box-shadow: 1px 1px 1px #ffffff;
-  cursor: pointer;
 }
 
 nav ul li a {
@@ -206,7 +205,20 @@ p {
   height: auto;
 }
 
+.card-boxx {
+  color: black;
+  text-align: center;
+  background-color: #dadada;
+  padding: 25px;
+  border-radius: 8px;
+  position: relative;
+  margin-top: 40px;
+}
+
 .card-box {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 95%;
   color: black;
   text-align: center;
   background-color: #dadada;
@@ -314,8 +326,7 @@ p {
   background: #dadada;
 }
 
-.contact-wrapper .contact-form button:hover
-button:focus {
+.contact-wrapper .contact-form button:hover button:focus {
   background: #080808;
   color: #fff;
   -webkit-transition: background-color 1s ease-out;
@@ -489,10 +500,11 @@ button:focus {
       grid-template-rows: 1fr;
 }
 
-.tituloCarrito{
+.tituloCarrito {
   padding: 20px;
   text-align: center;
 }
+
 .carrito {
   padding: 30px;
 }
@@ -555,6 +567,44 @@ button:focus {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+
+.footerN {
+  margin-top: 0;
+}
+
+.btn--facebook {
+  background-color: #dadada;
+}
+
+.btn--instagram {
+  background-color: #dadada;
+}
+
+/* extend*/
+.prendasDestacadas, .prendasDestacadas--dia, .prendasDestacadas--noche, .prendasDestacadas--formal {
+  border: 1px solid black;
+  background-color: #dadada;
+  margin: 10px;
+}
+
+.prendasDestacadas--dia {
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.prendasDestacadas--noche {
+  border-radius: 10px;
+}
+
+.prendasDestacadas--formal {
+  border-radius: 10px;
+}
+
+.my_mixin {
+  height: 50px;
+  width: 500px;
+  background-color: lightcoral;
 }
 
 * {
@@ -622,9 +672,7 @@ button:focus {
   -ms-grid-column: 1;
   grid-area: footer;
 }
-.footerN{
-  margin-top: 0;
-}
+
 .wrapper {
   display: -ms-grid;
   display: grid;
