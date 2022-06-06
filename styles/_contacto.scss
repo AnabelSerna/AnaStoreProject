@@ -88,3 +88,15 @@
     }
     }
 }
+@media (max-width:768px){
+    .contact-wrapper{
+       display: grid;
+       grid-template-columns: 2fr;
+       margin-bottom: 10px;
+    }
+ }
+ @media (min-width: 768px) and (max-width: 1800px){
+    .contact-wrapper{
+       margin-bottom: 100px;
+    }
+ }
