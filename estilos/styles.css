@@ -402,7 +402,8 @@ p {
   background: #dadada;
 }
 
-.contact-wrapper .contact-form button:hover button:focus {
+.contact-wrapper .contact-form button:hover
+button:focus {
   background: #080808;
   color: #fff;
   -webkit-transition: background-color 1s ease-out;
@@ -663,43 +664,6 @@ p {
 
 .footerN {
   margin-top: 0;
-}
-
-.btn--facebook {
-  background-color: #dadada;
-  margin: 10px;
-}
-
-.btn--instagram {
-  background-color: #dadada;
-  margin: 10px;
-}
-
-/* extend*/
-.prendasDestacadas, .prendasDestacadas--dia, .prendasDestacadas--noche, .prendasDestacadas--formal {
-  border: 1px solid black;
-  background-color: #dadada;
-  margin: 10px;
-}
-
-.prendasDestacadas--dia {
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
-.prendasDestacadas--noche {
-  border-radius: 10px;
-}
-
-.prendasDestacadas--formal {
-  border-radius: 10px;
-}
-
-.my_mixin {
-  height: 50px;
-  width: 500px;
-  background-color: #898585;
-  margin: 10px;
 }
 
 * {
