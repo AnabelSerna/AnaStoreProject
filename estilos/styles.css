@@ -462,7 +462,7 @@ button:focus {
   padding: .3em;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .contact-wrapper {
     display: -ms-grid;
     display: grid;
@@ -731,7 +731,7 @@ button:focus {
       grid-template-areas: "header" "carousel" "contenido" "galeria" "video" "titulo" "bootstrap" "minimo" "footer";
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;

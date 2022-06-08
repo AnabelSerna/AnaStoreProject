@@ -54,7 +54,7 @@
    "footer"
    ;
 }
-@media (max-width:767px){
+@media (min-width:767px){
    .wrapper{
       grid-template-columns: 1fr;
       display: grid;
