@@ -298,7 +298,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 55%;
+  width: 70%;
   margin: auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -472,7 +472,7 @@ button:focus {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1800px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .contact-wrapper {
     margin-bottom: 100px;
   }
@@ -770,7 +770,7 @@ button:focus {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1800px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;

@@ -100,7 +100,7 @@ h1{
 }
 
 
-@media (min-width: 768px) and (max-width: 1800px) {
+@media (min-width: 768px) and (max-width: 1023px) {
    .wrapper{
       grid-template-columns: 1fr;
       display: grid;
