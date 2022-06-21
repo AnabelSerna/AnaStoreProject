@@ -13,72 +13,24 @@
    margin: 0;
 }
 
-.site-header{
-   grid-area: header;
+
+@media (max-width:767px){
+.imagenD div, .imagenI div{
+   width: 97%;
 }
-.carousel-inner{
-   grid-area: carousel;
+p{
+   margin-right: 40px;
+
 }
-.blogContainer{
-   grid-area: contenido;
-}
-.galeria{
-   grid-area: galeria;
-}
-.video{
-   grid-area: video;
-}
-.tituloDestacados{
-   grid-area: titulo;
-}
-.bootstrap{
-   grid-area: bootstrap;
-}
-.card-box{
-   grid-area: minimo;
-}
-.footer{
-   grid-area: footer;
-}
-.wrapper{
-   display: grid;
-   grid-template-areas:
-   "header"
-   "carousel"
-   "contenido"
-   "galeria"
-   "video"
-   "titulo"
-   "bootstrap"
-   "minimo"
-   "footer"
-   ;
-}
-@media (min-width:767px){
-   .wrapper{
-      grid-template-columns: 1fr;
-      display: grid;
-      grid-template-areas:
-      "header"
-      "carousel"
-      "contenido"
-      "galeria"
-      "video"
-      "titulo"
-      "bootstrap"
-      "minimo"
-      "footer"
-      ;
-   }
-.bootstrap{
-   grid-template-columns: 1fr;
-}
-.blogContainer{
-   grid-template-columns: 1fr;
+.imagenD div,
+.imagenI div{
+   flex-direction: column;
+   width: 97%;
 }
 .video{
-   width: 100%;
+   width: 90%;
    height: 100%;
+   margin-left: 40px;
 }
 h1{
    font-size:22px;
@@ -89,38 +41,20 @@ h1{
 .contenedor-imagenes .imagen{
    width: 32%; 
    margin-top: 20px;
-}
-.cardtext{
-   font-size:22px;
-}
-.bootstrap {
-   width: 90%;
-   margin-left: 50px;
-}
+   height: 440px;
 }
 
+.bootstrap , .tituloDestacados{
+   display:none !important;
+}
+}
 
 @media (min-width: 768px) and (max-width: 1023px) {
-   .wrapper{
-      grid-template-columns: 1fr;
-      display: grid;
-      grid-template-areas:
-      "header"
-      "carousel"
-      "contenido"
-      "galeria"
-      "titulo"
-      "bootstrap"
-      "video"
-      "minimo"
-      "footer"
-      ;
-   }
-   .bootstrap{
-   grid-template-columns: 1fr;
-   }
-   .blogContainer{
-   grid-template-columns: 1fr;
+
+   p{
+      margin-left: 40px;
+      margin-right: 40px;
+   
    }
    .video{
    width: 100%;
@@ -132,8 +66,7 @@ h1{
    .contenedor-imagenes .imagen{
       width: 32%;
    }
-   .bootstrap{
-      width: 90%;
-      margin-left: 50px;
+   .overlay h2{
+      left: 30%;
    }
    }

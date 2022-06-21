@@ -88,10 +88,10 @@
     }
     }
 }
-@media (min-width:768px){
+@media (max-width:768px){
     .contact-wrapper{
        display: grid;
-       grid-template-columns: 2fr;
+       grid-template-columns: 1fr;
        margin-bottom: 10px;
     }
  }

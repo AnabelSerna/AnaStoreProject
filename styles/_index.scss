@@ -33,9 +33,12 @@ $titulo:#dadada;
 
 img{
    display: inline-block;
-   height: 450px;
-   width: 450x;
+   height: 350px;
    border-radius: 2px;
+}
+.card-img-top{
+   height: 350px;
+   width: 260px;
 }
 
 .imgindex{
@@ -55,9 +58,9 @@ p{
 
 .blogContainer{
    align-self: center;
-   width: 97%;
-   margin: 0 auto;
-   padding: 30px;
+   width: 95%;
+   margin: auto;
+   padding: 1%;
    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
    
 }
@@ -73,7 +76,6 @@ p{
 .imagenI div{
    width: 100%;
    margin: auto;
-   text-align: left;
    object-fit: cover;
 }
 
@@ -82,9 +84,7 @@ p{
    display: flex;
    justify-content: space-between;
 }
-.mainHeader{
-   padding: 10px;
-}
+
 
 .menu{
    display: none;
@@ -124,6 +124,8 @@ p{
    position: relative;
    margin-top: 40px;
    margin-bottom: 60px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .card-box::before{
@@ -185,7 +187,7 @@ p{
    display:flex;
    width: 70%;
    margin: auto;
-   justify-content: space-around;
+   justify-content: space-evenly;
    flex-wrap: wrap;
    border-radius:3px;
 }

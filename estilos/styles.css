@@ -117,9 +117,13 @@ footer .redes a:hover {
 
 img {
   display: inline-block;
-  height: 450px;
-  width: 450x;
+  height: 350px;
   border-radius: 2px;
+}
+
+.card-img-top {
+  height: 350px;
+  width: 260px;
 }
 
 .imgindex {
@@ -142,9 +146,9 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 97%;
-  margin: 0 auto;
-  padding: 30px;
+  width: 95%;
+  margin: auto;
+  padding: 1%;
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
@@ -170,7 +174,6 @@ p {
 .imagenI div {
   width: 100%;
   margin: auto;
-  text-align: left;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -182,10 +185,6 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.mainHeader {
-  padding: 10px;
 }
 
 .menu {
@@ -227,6 +226,8 @@ p {
   position: relative;
   margin-top: 40px;
   margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-box::before {
@@ -300,8 +301,9 @@ p {
   display: flex;
   width: 70%;
   margin: auto;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border-radius: 3px;
@@ -462,12 +464,12 @@ button:focus {
   padding: .3em;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .contact-wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 2fr;
-        grid-template-columns: 2fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     margin-bottom: 10px;
   }
 }
@@ -591,6 +593,9 @@ button:focus {
       grid-template-columns: repeat(auto-fit, 280px);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .tituloCarrito {
@@ -671,85 +676,25 @@ button:focus {
   margin: 0;
 }
 
-.site-header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: header;
-}
-
-.carousel-inner {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: carousel;
-}
-
-.blogContainer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: contenido;
-}
-
-.galeria {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: galeria;
-}
-
-.video {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: video;
-}
-
-.tituloDestacados {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  grid-area: titulo;
-}
-
-.bootstrap {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  grid-area: bootstrap;
-}
-
-.card-box {
-  -ms-grid-row: 8;
-  -ms-grid-column: 1;
-  grid-area: minimo;
-}
-
-.footer {
-  -ms-grid-row: 9;
-  -ms-grid-column: 1;
-  grid-area: footer;
-}
-
-.wrapper {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "header" "carousel" "contenido" "galeria" "video" "titulo" "bootstrap" "minimo" "footer";
-}
-
-@media (min-width: 767px) {
-  .wrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "header" "carousel" "contenido" "galeria" "video" "titulo" "bootstrap" "minimo" "footer";
+@media (max-width: 767px) {
+  .imagenD div, .imagenI div {
+    width: 97%;
   }
-  .bootstrap {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+  p {
+    margin-right: 40px;
   }
-  .blogContainer {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+  .imagenD div,
+  .imagenI div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 97%;
   }
   .video {
-    width: 100%;
+    width: 90%;
     height: 100%;
+    margin-left: 40px;
   }
   h1 {
     font-size: 22px;
@@ -760,31 +705,17 @@ button:focus {
   .contenedor-imagenes .imagen {
     width: 32%;
     margin-top: 20px;
+    height: 440px;
   }
-  .cardtext {
-    font-size: 22px;
-  }
-  .bootstrap {
-    width: 90%;
-    margin-left: 50px;
+  .bootstrap, .tituloDestacados {
+    display: none !important;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .wrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "header" "carousel" "contenido" "galeria" "titulo" "bootstrap" "video" "minimo" "footer";
-  }
-  .bootstrap {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .blogContainer {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+  p {
+    margin-left: 40px;
+    margin-right: 40px;
   }
   .video {
     width: 100%;
@@ -796,9 +727,8 @@ button:focus {
   .contenedor-imagenes .imagen {
     width: 32%;
   }
-  .bootstrap {
-    width: 90%;
-    margin-left: 50px;
+  .overlay h2 {
+    left: 30%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
