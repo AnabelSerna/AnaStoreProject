@@ -248,7 +248,7 @@ p {
 }
 
 .card-titles {
-  font-size: 40px;
+  font-size: 35px;
   margin-block: 25px;
 }
 
@@ -661,7 +661,7 @@ button:focus {
 
 .container_image {
   background-image: url(../imagenes/fondo.jpeg);
-  background-size: auto;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -674,6 +674,15 @@ button:focus {
 * {
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 630px) {
+  .bienvenida {
+    font-size: smaller;
+  }
+  .title_wrapper h1 {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -723,6 +732,9 @@ button:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .card-titles {
+    font-size: 25px;
   }
 }
 
