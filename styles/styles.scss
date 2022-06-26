@@ -16,12 +16,21 @@
 @media (max-width:630px){
    .bienvenida{
       font-size: smaller;
+      padding: 18px;
    }
 
    .title_wrapper h1 {
       font-size: 20px;
    }
 
+   .imgindex{
+      height: 280px;
+   }
+
+   .contenedor-imagenes .imagen{
+      width: 85%;
+      flex-direction: column;
+   }
 }
 
 
@@ -48,11 +57,6 @@ h1{
 }
 .contenedor-imagenes{
    width: 90%;
-}
-.contenedor-imagenes .imagen{
-   width: 32%; 
-   margin-top: 20px;
-   height: 440px;
 }
 
 .bootstrap , .tituloDestacados{
