@@ -88,6 +88,15 @@
     }
     }
 }
+
+@media (max-width:500px){
+    .contact-wrapper form{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
 @media (max-width:768px){
     .contact-wrapper{
        display: grid;

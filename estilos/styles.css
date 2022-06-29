@@ -464,6 +464,18 @@ button:focus {
   padding: .3em;
 }
 
+@media (max-width: 500px) {
+  .contact-wrapper form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media (max-width: 768px) {
   .contact-wrapper {
     display: -ms-grid;
